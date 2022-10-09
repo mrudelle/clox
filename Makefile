@@ -15,6 +15,7 @@ SOURCES := $(wildcard $(SOURCE_DIR)/*.c)
 OBJ = $(patsubst %,$(ODIR)/%,$(SOURCES:.c=.o))
 
 obj/%.o: %.c $(HEADERS)
+	@mkdir -p $(ODIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 chunk: $(OBJ)
