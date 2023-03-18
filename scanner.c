@@ -90,6 +90,7 @@ static void skipWhitespace() {
             } else {
                 return;
             }
+            break;
         default:
             return;
         }
@@ -213,5 +214,6 @@ Token scanToken() {
 
     }
 
+    printf("Unexpected character '%c':%d", *scanner.current, scanner.line);
     return errorToken("Unexpected character.");
 }

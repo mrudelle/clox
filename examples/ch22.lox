@@ -1,0 +1,14 @@
+// ch. 22 - Local variables
+
+var a = "Global";
+
+{
+    a = a + " var";
+    var b = "Local";
+    {
+        var c = b + " var";
+        print a;
+        print b;
+        print c; 
+    }
+}
