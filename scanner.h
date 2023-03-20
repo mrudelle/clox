@@ -31,5 +31,6 @@ typedef struct {
 
 void initScanner(const char* source);
 Token scanToken();
+void printTokenType(TokenType tt);
 
 #endif
