@@ -1,0 +1,16 @@
+var test = true;
+
+if (!test) {
+    print "test is truthy";
+} else {
+    print "test is falsey";
+}
+
+var count = 5;
+var text = "while loop ";
+
+while (count >= 0) {
+    text = text + "#";
+    count = count -1;
+    print text;
+}
