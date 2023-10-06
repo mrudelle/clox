@@ -599,9 +599,6 @@ static void declaration() {
 }
 
 static void statement() {
-    printf("entering statement with ");
-    printTokenType(parser.current.type);
-    printf("\n");
     if (match(TOKEN_PRINT)) {
         printStatement();
     } else if (match(TOKEN_FOR)) {
